@@ -4,4 +4,4 @@
 
 #Website screenshot
 
-![Website screenshot](images/screenshot.png)
+![Website screenshot](images/Screenshot.png)
