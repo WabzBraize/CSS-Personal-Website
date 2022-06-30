@@ -1,0 +1,591 @@
+/* Importing the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+/* -----------------------------------General Styles----------------------------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  background-color: rgba(183, 215, 198, 0.37);
+  background-image: url("../images/bg-pattern1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(5, 26, 14);
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  opacity: 0.8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(6, 26, 15);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+  font-family: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/*----------------------------------------------------------------------------/ End of General styles-------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------Custom styles----------------------------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the index page--------------------------------------------------------------------------- */
+
+.nav-container {
+  width: 80%;
+  margin: 1rem auto;
+  height: calc(100vh - 100px);
+  padding: 1.2rem;
+  text-align: calc();
+}
+
+/* Aligns the nav items on the same line */
+.nav-container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container .row .col {
+  width: 30%;
+  background-color: lightgray;
+  height: 140px;
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #1a1a1a;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.nav-container .row-2 .col {
+  margin: auto;
+}
+
+.nav-container .row .col a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  padding: 1rem;
+}
+
+.nav-container .row .col a i {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.nav-container .row .col a span {
+  word-wrap: break-word;
+}
+
+.nav-container .row .profile-photo {
+  background-color: rgb(67, 67, 255);
+  color: #fff;
+}
+
+.nav-container .row .hobbies {
+  background-color: rgb(170, 170, 255);
+}
+
+.nav-container .row .contact {
+  background-color: rgb(246, 221, 139);
+}
+
+.nav-container .row .education {
+  background-color: rgb(79, 79, 85);
+  color: #fff;
+}
+
+.nav-container .row .bio:hover {
+  background-color: rgb(168, 168, 168);
+}
+
+.nav-container .row .profile-photo:hover {
+  background-color: rgb(44, 44, 255);
+}
+
+.nav-container .row .hobbies:hover {
+  background-color: rgb(133, 133, 255);
+}
+
+.nav-container .row .contact:hover {
+  background-color: rgb(255, 222, 113);
+}
+
+.nav-container .row .education:hover {
+  background-color: rgb(44, 44, 47);
+  color: #fff;
+}
+
+/*------------------------------------------------------------------------ /End of Styles for the index page--------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the bio page--------------------------------------------------------------------------- */
+section.hero-section {
+  width: 85%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+section.hero-section .hero-text h1 {
+  font-size: 2.5rem;
+}
+
+section.hero-section .hero-text h1 span {
+  position: relative;
+  z-index: 1;
+}
+
+section.hero-section .hero-text h1 span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: orangered;
+  bottom: 0.5rem;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+section.hero-section .hero-text p {
+  opacity: 0.9;
+  margin: 1rem 0;
+}
+
+section.hero-section .hero-image img {
+  width: 80% !important;
+}
+
+section.hero-section button {
+  background-color: orangered;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+section.hero-section button:hover {
+  background-color: rgb(195, 52, 0);
+}
+/*------------------------------------------------------------------------ /End of Styles for the bio page--------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the contact page--------------------------------------------------------------------------- */
+
+.form-wrapper {
+  max-width: 400px;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.37);
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+}
+
+.form-wrapper label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-wrapper .input-field {
+  position: relative;
+  width: 100%;
+  height: 35px;
+}
+
+.form-wrapper .input-field input,
+.form-wrapper textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.8rem;
+  border: 1px solid gray;
+  color: inherit;
+  border-radius: 0.4rem;
+}
+
+.form-wrapper .input-field input:focus,
+.form-wrapper textarea:focus {
+  border: 1px solid rgb(0, 109, 49);
+  box-shadow: 2px 2px 3px rgba(0, 155, 75, 0.609),
+    -2px -2px 3px rgba(0, 155, 75, 0.609);
+}
+
+.form-wrapper .input-field i {
+  position: absolute;
+  font-size: 1.2rem;
+  color: gray;
+  top: 0.5rem;
+  left: 0.4rem;
+}
+
+.form-wrapper textarea {
+  height: 100px;
+  padding: 0.8rem;
+}
+
+.form-wrapper button.send {
+  display: block;
+  margin: auto;
+  background-color: rgb(6, 26, 15);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+  margin-top: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-wrapper button.send:hover {
+  background-color: rgb(11, 44, 26);
+}
+
+/*------------------------------------------------------------------------ /End of Styles for the contact page--------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the education page--------------------------------------------------------------------------- */
+
+.education-container {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.37);
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+}
+
+.education-container table {
+  width: 100%;
+}
+
+.education-container table thead tr {
+  background-color: rgb(6, 26, 15);
+  color: #fff;
+}
+
+.education-container table thead tr th {
+  padding: 0.4rem;
+}
+
+.education-container table tbody tr td {
+  padding: 0.5rem;
+}
+
+.education-container table tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+/*------------------------------------------------------------------------ /End of Styles for the education page--------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the profile-photo n page--------------------------------------------------------------------------- */
+
+.image-container {
+  width: 80%;
+  margin: auto;
+  padding: 1.5rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  grid-template-rows: repeat(16, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.image-container div {
+  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.37);
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image-container div:nth-child(1) {
+  height: 280px;
+  grid-column: 1/9;
+  grid-row: 2/12;
+}
+
+.image-container div:nth-child(2) {
+  height: 250px;
+  width: 400px;
+  grid-column: 10/12;
+  grid-row: 1/10;
+}
+
+.image-container div:nth-child(3) {
+  width: 350px;
+  grid-column: 6/15;
+  grid-row: 4/16;
+}
+
+.image-container div:hover img {
+  transition: all 0.2s ease-in-out;
+}
+
+.image-container div:hover img {
+  transform: scale(1.5);
+}
+/*------------------------------------------------------------------------ /End of Styles for the profile-photo page--------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------ Styles for the hobbies page--------------------------------------------------------------------------- */
+/* hobbies-container that wrappers all the content */
+.hobbies-container {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies-timeline {
+  position: relative;
+  height: auto;
+}
+
+/* Add the line separating the odd and even hobbies */
+.hobbies-timeline::before {
+  position: absolute;
+  content: " ";
+  height: 91%;
+  width: 2px;
+  background-color: #1a1a1a;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hobbies-timeline ul li {
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Make all the odd hobbies float left and nothing on their right*/
+.hobbies-timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+}
+
+/* Make all the even hobbies float right and nothing on their left*/
+.hobbies-timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+}
+
+/* Adds the hand icon pointing to the hobby */
+.hobbies-timeline ul li::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "fontawesome";
+  display: grid;
+  place-items: center;
+  line-height: 30px;
+}
+
+/* Add the pointer on the li container */
+.hobbies-timeline ul li::after {
+  position: absolute;
+  content: "";
+  border-width: 16px;
+  border-style: solid;
+}
+
+.hobbies-timeline ul li:nth-child(odd)::after {
+  top: 0.5rem;
+  right: -2rem;
+  border-color: transparent transparent transparent rgb(255, 255, 255);
+}
+
+.hobbies-timeline ul li:nth-child(even)::after {
+  top: 0.5rem;
+  left: -2rem;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+/* This adds the icon on the odd hobbies pseudo element */
+.hobbies-timeline ul li:nth-child(odd):before {
+  content: "\f0a5";
+  top: 0;
+  right: -45px;
+}
+
+/* This adds the icon on the even hobbies pseudo element */
+.hobbies-timeline ul li:nth-child(even):before {
+  content: "\f0a4";
+  top: 0;
+  left: -45px;
+}
+
+/* Change background of the pseudo element when list in hovered */
+.hobbies-timeline ul li:hover::before {
+  background-color: rgb(0, 116, 52);
+}
+
+.image {
+  width: 95%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+.image h4 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translateY(-300px);
+  background-color: rgba(137, 200, 167, 0.712);
+  padding: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* When the image is hovered, zoom the image */
+.image:hover img {
+  transform: scale(1.5);
+}
+
+/* When the image is hovered, show the h4 */
+.image:hover h4 {
+  transform: translateY(0);
+}
+
+/*------------------------------------------------------------------------/ End of Styles for the hobbies page--------------------------------------------------------------------------- */
+
+/*----------------------------------------------------------------- MEDIA QUERIES------------------------------------------------------ */
+
+/* These styles apply for screens with a max width of 1024px */
+@media (max-width: 1024px) {
+  .hobbies-container {
+    width: 70%;
+  }
+
+  .image-container {
+    width: 90%;
+  }
+}
+
+/* These styles apply for screens with a max width of 768px */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .image-container div:nth-child(1) {
+    grid-column: 1/16;
+    grid-row: 1/6;
+    height: 100%;
+  }
+
+  .image-container div:nth-child(2) {
+    width: 100%;
+    grid-column: 1/16;
+    grid-row: 6/12;
+    height: 100%;
+  }
+
+  .image-container div:nth-child(3) {
+    grid-column: 1/16;
+    grid-row: 12/16;
+    width: 100%;
+  }
+}
+
+/* These styles apply for screens with a max width of 600px */
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+
+  .nav-container {
+    width: 90%;
+  }
+
+  .nav-container .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-container .row .col {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-container .row .col a {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .hobbies-container {
+    width: 80%;
+  }
+  .hobbies-timeline ul li {
+    display: block;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  section.hero-section {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  section.hero-section .hero-image img {
+    width: 100% !important;
+  }
+}
